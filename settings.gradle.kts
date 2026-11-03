@@ -1,3 +1,5 @@
+rootProject.name = "settlers-mod"
+
 val isCi = System.getenv("CI") == "true"
 gradle.startParameter.isParallelProjectExecutionEnabled = !isCi
 gradle.startParameter.isBuildCacheEnabled = !isCi
@@ -27,6 +29,7 @@ val neoforgeVersions = providers.gradleProperty("stonecutter_enabled_neoforge_ve
 val dists = mapOf(
     "common" to commonVersions,
     "forge" to forgeVersions,
+
     "fabric" to fabricVersions,
     "neoforge" to neoforgeVersions
 )
@@ -47,4 +50,3 @@ stonecutter {
     }
 }
 
-rootProject.name = "examplemod"

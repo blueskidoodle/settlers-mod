@@ -1,6 +1,7 @@
 plugins {
     `kotlin-dsl`
     kotlin("jvm") version "2.2.0"
+    id("io.spring.dependency-management") version "1.1.7"
 }
 
 repositories {
